@@ -3,8 +3,8 @@ import sys, os
 sys.path.append(os.pardir)  # 親ディレクトリのファイルをインポートするための設定
 import numpy as np
 import pickle
-from dataset.mnist import load_mnist
-from common.functions import sigmoid, softmax
+from dataset.mnist import load_mnist # type: ignore
+from common.functions import sigmoid, softmax # type: ignore
 
 
 def get_data():
